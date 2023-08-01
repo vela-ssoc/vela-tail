@@ -16,7 +16,7 @@ type config struct {
 
 	co   *lua.LState
 	sdk  lua.Writer
-	pipe *pipe.Px
+	pipe *pipe.Chains
 }
 
 func newConfig(L *lua.LState) *config {

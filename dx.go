@@ -2,8 +2,8 @@ package tail
 
 import (
 	"fmt"
-	"github.com/vela-ssoc/vela-kit/audit"
 	cond "github.com/vela-ssoc/vela-cond"
+	"github.com/vela-ssoc/vela-kit/audit"
 	"github.com/vela-ssoc/vela-kit/grep"
 	"github.com/vela-ssoc/vela-kit/lua"
 	"github.com/vela-ssoc/vela-kit/pipe"
@@ -19,7 +19,7 @@ type Dx struct {
 
 	err error
 
-	on  *pipe.Px
+	on  *pipe.Chains
 	co  *lua.LState
 	cnd *cond.Cond
 

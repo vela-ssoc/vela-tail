@@ -28,7 +28,7 @@ type Watcher struct {
 	after    time.Duration
 	interval time.Duration
 	timeout  time.Duration
-	onEOF    *pipe.Px
+	onEOF    *pipe.Chains
 }
 
 type Fx struct {
@@ -50,7 +50,7 @@ type Fx struct {
 
 	watcher *Watcher
 	co      *lua.LState
-	pipe    *pipe.Px
+	pipe    *pipe.Chains
 	cnd     *cond.Cond
 	tom     *tomb.Tomb
 	tag     map[string]lua.LValue
